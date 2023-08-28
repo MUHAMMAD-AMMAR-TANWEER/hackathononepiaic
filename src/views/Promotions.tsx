@@ -9,13 +9,13 @@ const Promotions = () => {
       <h1 className="flex text-blue-500 mt-20 font-bold text-base justify-center">
         PROMOTIONS
       </h1>
-      <h1 className="flex  mt-1 font-bold text-3xl justify-center">
+      <h1 className="flex mt-1 font-bold text-3xl justify-center">
         OUR PROMOTIONS EVENTS
       </h1>
-      <div className="flex flex-1 mt-8">
+      <div className="flex flex-row flex-1 mt-8 tablet:flex-col gap-y-7 items-center justify-center">
         {/* Left */}
-        <div className="">
-          <div className="flex items-center justify-between bg-[#d6d6d8] px-8  text-[#212121] tracking-wider flex-1  ">
+        <div className="flex-1">
+          <div className="flex items-center justify-between bg-[#d6d6d8] px-4 text-[#212121] tracking-wider flex-1  ">
             <div className="flex flex-col flex-1 items-start justify-start ">
               <h3 className="font-bold text-xl sm:text-2xl leading-9 text-[#212121]">
                 GET UP TO 60%
@@ -41,7 +41,7 @@ const Promotions = () => {
           </div>
         </div>
         {/* Right */}
-        <div className="ml-6 flex gap-4 items-center justify-center flex-1 flex-col sm:flex-row">
+        <div className="ml-2 flex gap-4 items-center justify-center flex-1 flex-col sm:flex-row">
           <div className="pt-6 bg-[#efe1c7] flex flex-col justify-between flex-1 w-full sm:w-auto">
             <div>
               <div className="ml-4">

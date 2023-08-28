@@ -2,6 +2,8 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import { Header } from "@/components/layout/Header";
 import { Maven_Pro } from "next/font/google";
+import Footer from "@/components/layout/Footer";
+import Copyright from "@/components/layout/Copyright";
 const inter = Inter({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800", "900"],
@@ -22,6 +24,8 @@ export default function RootLayout({
       <body className={inter.className}>
         <Header />
         <main className="max-w-screen-lg mx-auto">{children}</main>
+        <Footer />
+        <Copyright />
       </body>
     </html>
   );

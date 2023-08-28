@@ -10,7 +10,7 @@ import brand4 from "/public/brand4.webp"
 
 const Hero = () => {
   return (
-    <section className="flex  items-start justify-center mt-14 gap-x-4 mx-8">
+    <section className="flex items-start justify-center mt-14 gap-x-4 mx-8 ">
       {/* left */}
       <div className="flex-1 gap-y-15
       ">
@@ -36,7 +36,7 @@ const Hero = () => {
       </div>
       </div>
       {/* right */}
-      <div  className="flex-1 bg-orange-100 rounded-full ">
+      <div  className="flex-1 bg-orange-100 rounded-full tablet:hidden">
         <Image src={heroImage} alt="heroImage"/>
       </div>
       

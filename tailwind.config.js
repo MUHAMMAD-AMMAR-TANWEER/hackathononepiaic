@@ -16,6 +16,20 @@ module.exports = {
       },
     },
     extend: {
+      screens: {
+        // 'desktop': '1280px',
+        // => @media (max-width: 1535px) { ... }
+        // 'xl-desktop': { max: '1536px' },
+        "lg-desktop": { max: "1535px" },
+        "md-desktop": { max: "1279px" },
+        "sm-desktop": { max: "1024px" },
+        "xs-desktop": { max: "992px" },
+        tablet: { max: "768px" },
+        "lg-mob": { max: "600px" },
+        "semiLg-mob": { max: "500px" },
+        "md-mob": { max: "450px" },
+        "sm-mob": { max: "320px" },
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
