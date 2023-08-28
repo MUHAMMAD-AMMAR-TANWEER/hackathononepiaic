@@ -1,14 +1,14 @@
-import Image from "next/image";
-import { Button } from "@/components/ui/button";
+import Hero from '@/views/Hero'
+import ProductList from '@/views/ProductList'
+import Promotions from '@/views/Promotions'
+import Image from 'next/image'
 
-import { HeartCrack } from "lucide-react";
-import Hero from "@/views/Hero";
-import ProductList from "@/views/ProductList";
 export default function Home() {
   return (
-    <div className="m-6">
+    <div>
       <Hero />
+      <Promotions />
       <ProductList />
     </div>
-  );
+  )
 }

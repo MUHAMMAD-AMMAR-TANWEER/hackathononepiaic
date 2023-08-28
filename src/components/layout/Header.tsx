@@ -3,43 +3,28 @@ import Image from "next/image";
 import Link from "next/link";
 import { ShoppingCart } from "lucide-react";
 import { BiSearch } from "react-icons/bi";
+import { FiShoppingCart } from "react-icons/fi";
 
 export const Header = () => {
   return (
-    <div className="flex justify-between items-center py-6 px-6 wrapper mx-auto">
-      <Link href={"/"}>
-        <Image src={logo} alt="logo" className="w-40" />
-      </Link>
-      <div className="hidden lg:block">
-        <ul className="flex gap-x-10 ">
-          <li className="text-lg text-bold">
-            <Link href={"/category/female"}>Female</Link>
-          </li>
-          <li className="text-lg text-bold">
-            <Link href={"/category/male"}>Male</Link>
-          </li>
-          <li className="text-lg text-bold">
-            <Link href={"/category/kids"}>Kids</Link>
-          </li>
-          <li className="text-lg text-bold">
-            <Link href={"/products"}>All Products</Link>
-          </li>
+    <div className='flex justify-between items-center pt-6 max-w-screen-lg mx-auto '>
+        <Image src={logo} alt='logo' className='object-contain' />
+        <ul className='flex gap-x-6 '>
+            <li className='cursor-pointer hover:text-gray-700 transition-transform transform-grow hover:scale-125'>Female</li>
+            <li className='cursor-pointer hover:text-gray-700 transition-transform transform-grow hover:scale-125'>Male</li>
+            <li className='cursor-pointer hover:text-gray-700 transition-transform transform-grow hover:scale-125'>Kid</li>
+            <li className='cursor-pointer hover:text-gray-700 transition-transform transform-grow hover:scale-125'>All Products</li>
         </ul>
-      </div>
-      <div className="border flex items-center text-gray-600 rounded-md px-3">
-        <BiSearch />
-        <input
-          type="text"
-          className="pr-5 py-1 pl-1 w-80"
-          placeholder="Searh in our store"
-        />
-      </div>
-      <div className="h-10 w-10 rounded-full bg-gray-200 flex justify-center items-center">
-        <ShoppingCart className="h-6 w-6" />
-        <div className="h-4 w-4 absolute mb-5 ml-3 bg-orange-500 text-xs font-light rounded-full flex justify-center items-center">
-          3
+        <div className='flex items-center gap-x-2 border border-slate-200 rounded-[5px] pl-1 w-64'>
+            <BiSearch  style={{color: "#404e5a"}} className='ml-1' />
+            <div>
+                <input placeholder='What you looking for' className='outline-none text-slate-500 ' />
+            </div>
         </div>
-      </div>
+        <div className='relative h-9 w-9 flex items-center justify-center cursor-pointer bg-slate-100 rounded-full p-2 transition-transform transform-grow hover:scale-125'>
+            <div className='bg-red-600 absolute h-3.5 w-3.5 rounded-full flex items-center justify-center  text-white p-1 top-0 text-xs right-0'>0</div>
+            <FiShoppingCart className='' />
+        </div>
     </div>
   );
 };

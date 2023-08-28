@@ -9,15 +9,15 @@ export const Products: Product[] = [
   {
     id: 1,
     tagline: "Dress",
-    name: "Product One",
+    name: "Loose Black Shirt",
     price: 200,
-    category: "male",
+    category: "female",
     image: product1,
   },
   {
     id: 2,
     tagline: "Dress Ace",
-    name: "Product Two",
+    name: "Dress",
     price: 300,
     category: "female",
     image: product2,
@@ -25,7 +25,7 @@ export const Products: Product[] = [
   {
     id: 3,
     tagline: "Dress Club",
-    name: "Product Three",
+    name: "T Shirt",
     price: 400,
     category: "female",
     image: product3,

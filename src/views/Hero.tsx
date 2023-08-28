@@ -1,34 +1,45 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { FiShoppingCart } from "react-icons/fi"
 import heroImage from "/public/header.webp";
 import Image from "next/image";
+import brand1 from "/public/brand1.webp"
+import brand2 from "/public/brand2.webp"
+import brand3 from "/public/brand3.webp"
+import brand4 from "/public/brand4.webp"
 
 const Hero = () => {
   return (
-    <section className="flex flex-col lg:flex-row gap-y-10 py-6 wrapper mx-auto">
-      {/* Left Div  */}
-      <div className="flex-1">
-        <Badge className="py-1 px-4 text-lg bg-blue-200 text-blue-700 rounded-xl hover:bg-blue-200">
-          Sale
+    <section className="flex  items-start justify-center mt-14 gap-x-4 mx-8">
+      {/* left */}
+      <div className="flex-1 gap-y-15
+      ">
+        <Badge
+          variant="outline"
+          className="bg-blue-200 text-blue-700 px-6 py-2 mt-5 mb-10 rounded-2xl text-lg"
+        >
+          70% OFF
         </Badge>
-        <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl mt-6">
-          An Industrial take on streetwear
+        <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl mb-5">
+          An Industrial take on streatwear
         </h1>
-        <p className="leading-7 [&:not(:first-child)]:mt-6">
-          Once upon a time, in a far-off land, there was a very lazy king who
-          spent all day lounging on his throne. One day, his advisors came to
-          him with a problem: the kingdom was running out of money.
-        </p>
-        <Button className="bg-black py-3.5 text-white rounded-xl h-12  mt-4">
-          Start Shopping
-        </Button>
+        <p className="leading-7 [&:not(:first-child)]:mt-2 mb-10">
+        Anyone can beat you but no one can beat your outfit as long as you wear dine outfit.
+      </p>
+      
+      <Button variant="outline" className="gap-x-2 hover:bg-gray-300 rounded-xl mb-10 border-white bg-gray-200"><FiShoppingCart />   Start Shopping</Button>
+      <div className="flex gap-x-5">
+        <Image src={brand1} alt="brand1" />
+        <Image src={brand2} alt="brand2" />
+        <Image src={brand3} alt="brand3" />
+        <Image src={brand4} alt="brand4" />
       </div>
-
-      {/* Right Div  */}
-
-      <div className="flex-1">
-        <Image src={heroImage} alt="hero Image" />
       </div>
+      {/* right */}
+      <div  className="flex-1 bg-orange-100 rounded-full ">
+        <Image src={heroImage} alt="heroImage"/>
+      </div>
+      
     </section>
   );
 };
